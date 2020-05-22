@@ -168,8 +168,8 @@ class App:
         self.draw_text('SELECT LEVEL: {}'.format(self.level), self.screen, [WIDTH//2, HEIGHT//2 + 50], START_TEXT_SIZE,
                        (255, 43, 18), START_FONT, center=True)
 
-        mapNames = ["No Escape!!!", "Map 1",
-                    "Map 2", "Map 3", "Map 4", "Map 5"]
+        mapNames = ["No Escape!!!",  "Jenga",
+                    "One Pillar pagoda", "Sun temple", "Tartarus", "HCM map"]
 
         self.draw_text('<< {} >>'.format(mapNames[self.map]), self.screen, [WIDTH//2, HEIGHT//2 + 100], 18,
                        (255, 104, 0), START_FONT, center=True)
