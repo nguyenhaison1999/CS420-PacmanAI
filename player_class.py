@@ -10,7 +10,6 @@ class Player:
         self.app = app
         self.starting_pos = [pos.x, pos.y]
         self.grid_pos = vec(pos[0], pos[1])
-        self.grid_pos_none_vec = pos
         self.pix_pos = self.get_pix_pos()
         self.direction = vec(0, 0)
         self.stored_direction = None
