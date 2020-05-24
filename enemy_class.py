@@ -38,11 +38,11 @@ class Enemy:
 
     def set_speed(self):
         if self.personality == "speedy":
-            speed = 2
+            speed = 1
         elif self.personality == "slow":
             speed = 0.5
         else:
-            speed = 1
+            speed = 0.75
         return speed
 
     def time_to_move(self):

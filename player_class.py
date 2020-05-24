@@ -28,7 +28,6 @@ class Player:
                     self.direction = self.stored_direction
                 self.able_to_move = self.can_move()
         else:
-
             self.target = self.set_target()
             if self.target != self.grid_pos:
                 self.pix_pos += self.direction * self.speed
@@ -132,10 +131,10 @@ class Player:
             return self.get_random_direction()
 
     def find_next_cell_in_path(self, target):
-        if self.app.level == 1 or self.app.level == 2:
+        if self.app.level == 1 or self.app.level == 2 or self.app.level == 4:
             path = self.BFS([int(self.grid_pos.x), int(self.grid_pos.y)], [
                             int(target[0]), int(target[1])])
-        else:
+        elif self.app.level == 3:
             path = self.BFS_limted([int(self.grid_pos.x), int(self.grid_pos.y)], [
                 int(target[0]), int(target[1])])
 
@@ -196,7 +195,6 @@ class Player:
         path = []
         visited = []
         player_pos = self.grid_pos
-        # sorry for the hardcode, but the deadline is up and I'm kinda stuck
         limite_grid = [[player_pos[0]+1, player_pos[1]+3], [player_pos[0]+2, player_pos[1]+3], [player_pos[0]+3, player_pos[1]+3], [player_pos[0]+2, player_pos[1]+2], [player_pos[0]+2, player_pos[1]+3], [player_pos[0]+1, player_pos[1]+3],
                        [player_pos[0]-1, player_pos[1]+3], [player_pos[0]-2, player_pos[1]+3], [player_pos[0]-3, player_pos[1]+3], [
                            player_pos[0]-3, player_pos[1]+1], [player_pos[0]-2, player_pos[1]+2], [player_pos[0]-3, player_pos[1]+2],
@@ -256,4 +254,7 @@ class Player:
                                 self.grid_pos.y + y_dir)
             if next_position not in self.app.walls:
                 break
+        for enemy in self.app.enemies:
+            if next_position == enemy.grid_pos:
+                return self.get_random_direction()
         return vec(x_dir, y_dir)
