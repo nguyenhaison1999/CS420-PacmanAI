@@ -10,6 +10,7 @@ Project 1 on **CS420**, create an AI that plays the Pacman game using search alg
 ```
 $ py main.py
 ```
+  Use arrow keys to navigate the game.
 
 ## Contributing
 Nguyễn Hải Sơn       - `1751100`
@@ -23,5 +24,5 @@ Trần Trung Đức       - `1751059`
 
 ## Acknowledgments
 - [Pacman in Python by A plus Coding](https://www.youtube.com/playlist?list=PLryDJVmh-ww3AMl8NSjp9YygWWTOfePu7)
-- [Python BFS Maze solving program](https://www.youtube.com/watchv=ZuHW4fS60pc&fbclid=IwAR019IfXCJ_FBr4jg_ZxgK6rCsX5LOe37Y6ywhf8x8OTaXveiYKU-56WnhE)
+- [Python BFS Maze solving program](https://youtu.be/ZuHW4fS60pc)
 
