@@ -12,16 +12,6 @@ $ py main.py
 ```
   Use arrow keys to navigate the game.
 
-## Contributing
-Nguyễn Hải Sơn       - `1751100`
-
-Thái Thuận Thành     - `1751103`
-
-Huỳnh Minh Quốc Nhật - `1751089`
-
-Trần Trung Đức       - `1751059`
-
-
 ## Acknowledgments
 - [Pacman in Python by A plus Coding](https://www.youtube.com/playlist?list=PLryDJVmh-ww3AMl8NSjp9YygWWTOfePu7)
 - [Python BFS Maze solving program](https://youtu.be/ZuHW4fS60pc)
